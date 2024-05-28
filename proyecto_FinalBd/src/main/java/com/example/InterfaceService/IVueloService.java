@@ -17,4 +17,13 @@ public interface IVueloService {
 	Boolean delete(Integer id);
 
 	List<vuelo> obtenerVuelosPorRangoDeFechas(LocalDateTime startDate, LocalDateTime endDate);
+	
+    //Información de los vuelos y aviones que tuvieron  origen:
+	  List<vuelo> obtenerVuelosPorOrigenBogota();
+	 
+	 //Información de los vuelos y aviones que tuvieron  desitno:
+	   List<vuelo> obtenerVuelosPorDestinoNeiva();
+	   
+	  
+	  List<Object[]> obtenerDestinoConMasVuelosEnMes(int mes, int ano);
 }

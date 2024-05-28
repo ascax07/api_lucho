@@ -16,6 +16,8 @@ import com.example.models.avion;
     avion save(avion avion);
 
     Boolean delete(Integer id);
+    
+    List<avion> findAllWithBase();
 }
 
 

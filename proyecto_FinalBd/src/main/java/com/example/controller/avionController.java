@@ -43,6 +43,11 @@ public class avionController {
         return service.delete(id);
     }
     
+    @GetMapping("/mantenimiento")
+    public List<avion> getAvionesConBase() {
+        return service.findAllWithBase();
+    }
+    
 }
 
 

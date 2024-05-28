@@ -42,5 +42,10 @@ public class AvionServiceImpI implements  IAvionService{
             return false;
         }    
     }
+    
+    @Override
+    public List<avion> findAllWithBase() {
+        return repository.findAllWithBase();
+    }
 
 }
